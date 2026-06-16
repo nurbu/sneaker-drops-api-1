@@ -1,9 +1,9 @@
 package com.pluralsight.sneakerdropsapi.service;
 
-import com.pluralsight.sneakerdrops.data.BrandRepository;
-import com.pluralsight.sneakerdrops.data.SneakerRepository;
-import com.pluralsight.sneakerdrops.models.Brand;
-import com.pluralsight.sneakerdrops.models.Sneaker;
+import com.pluralsight.sneakerdropsapi.data.BrandRepository;
+import com.pluralsight.sneakerdropsapi.data.SneakerRepository;
+import com.pluralsight.sneakerdropsapi.models.Brand;
+import com.pluralsight.sneakerdropsapi.models.Sneaker;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

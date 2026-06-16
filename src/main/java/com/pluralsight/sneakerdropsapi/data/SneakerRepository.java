@@ -1,6 +1,6 @@
 package com.pluralsight.sneakerdropsapi.data;
 
-import com.pluralsight.sneakerdrops.models.Sneaker;
+import com.pluralsight.sneakerdropsapi.models.Sneaker;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 
