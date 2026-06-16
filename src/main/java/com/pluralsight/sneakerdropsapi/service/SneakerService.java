@@ -21,10 +21,6 @@ public class SneakerService {
         this.brandRepository = brandRepository;
     }
 
-    public long count() {
-        return sneakerRepository.count();
-    }
-
     public List<Sneaker> allSneakers() {
         return sneakerRepository.findAll();
     }
@@ -69,25 +65,7 @@ public class SneakerService {
         return sneakerRepository.findByBrandName(brandName);
     }
 
-    public List<Brand> listBrands() {
-        return brandRepository.findAll();
-    }
-
     public List<Sneaker> search(double maxPrice, int minReleaseYear) {
         return sneakerRepository.search(maxPrice, minReleaseYear);
-    }
-
-    public void seedData() {
-        if (brandRepository.count() == 0) {
-            Brand nike = brandRepository.save(new Brand("Nike"));
-            Brand adidas = brandRepository.save(new Brand("Adidas"));
-            Brand newBalance = brandRepository.save(new Brand("New Balance"));
-
-            if (sneakerRepository.count() == 0) {
-                sneakerRepository.save(new Sneaker("Jordans_1", 200, 1998, nike));
-                sneakerRepository.save(new Sneaker("Jordans_4", 300, 2004, nike));
-                sneakerRepository.save(new Sneaker("Jordans_11", 150, 2007, nike));
-            }
-        }
     }
 }
